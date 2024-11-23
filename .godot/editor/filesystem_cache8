@@ -1,9 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732147437
+::res://::1732306723
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1732146297::0::1::::<><>::
 icon.png::CompressedTexture2D::621515402784007901::1732146297::1732146369::1::::<><>::
-player.gd::GDScript::-1::1732147412::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7246611827477750623::1732147432::0::1::::<><>::res://player.gd<>uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn
+Mob.gd::GDScript::-1::1732304283::0::1::::<>CharacterBody2D<>::
+mob.tscn::PackedScene::434491404287468435::1732306697::0::1::::<><>::res://Mob.gd<>uid://ogik4s70pgwl::::res://characters/slime/slime.tscn
+pine_tree.tscn::PackedScene::4641563029041519002::1732151857::0::1::::<><>::uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://trees/pine_tree.png
+player.gd::GDScript::-1::1732148730::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7246611827477750623::1732151857::0::1::::<><>::res://player.gd<>uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn
+survivors_game.tscn::PackedScene::2898968748802004773::1732306705::0::1::::<><>::uid://dbikvxuekatwh::::res://player.tscn<>uid://b7en4n45o7x0m::::res://pine_tree.tscn
 ::res://addons/::1732146297
 ::res://addons/colorpicker_presets/::1732146298
 colorpicker_presets.gd::GDScript::-1::1732146297::0::1::::<>EditorPlugin<>::

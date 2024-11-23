@@ -1,16 +1,45 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhkjuecclm2kv"]
+[gd_scene load_steps=5 format=3 uid="uid://bhkjuecclm2kv"]
 
+[ext_resource type="PackedScene" uid="uid://vhnjf4uyiohq" path="res://gun.tscn" id="1_bu3y8"]
 [ext_resource type="PackedScene" uid="uid://dbikvxuekatwh" path="res://player.tscn" id="1_vmejr"]
 [ext_resource type="PackedScene" uid="uid://b7en4n45o7x0m" path="res://pine_tree.tscn" id="2_mu3wj"]
+[ext_resource type="PackedScene" uid="uid://bjk07dn0smo4d" path="res://mob.tscn" id="3_simj3"]
 
 [node name="Game" type="Node2D"]
+y_sort_enabled = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1450.0
-offset_bottom = 883.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_left = 2.0
+offset_right = 1950.0
+offset_bottom = 1099.0
 
 [node name="Player" parent="." instance=ExtResource("1_vmejr")]
-position = Vector2(768, 515)
+
+[node name="Gun" parent="Player" instance=ExtResource("1_bu3y8")]
+
+[node name="Mob" parent="." instance=ExtResource("3_simj3")]
+position = Vector2(154, 428)
+
+[node name="Mob2" parent="." instance=ExtResource("3_simj3")]
+position = Vector2(179, 558)
+
+[node name="Mob3" parent="." instance=ExtResource("3_simj3")]
+position = Vector2(73, 511)
+
+[node name="Mob4" parent="." instance=ExtResource("3_simj3")]
+position = Vector2(67, 328)
+
+[node name="Mob5" parent="." instance=ExtResource("3_simj3")]
+position = Vector2(248, 351)
+
+[node name="Mob6" parent="." instance=ExtResource("3_simj3")]
+position = Vector2(325, 257)
+
+[node name="Mob7" parent="." instance=ExtResource("3_simj3")]
+position = Vector2(83, 648)
 
 [node name="PineTree" parent="." instance=ExtResource("2_mu3wj")]
 position = Vector2(137, 213)
